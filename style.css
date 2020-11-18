@@ -1,7 +1,20 @@
+html,
+body {
+  margin: 0;
+}
 body {
   background-color: beige;
 }
+main {
+  margin-bottom: -50px;
+}
+article {
+  /* the heigth of the article 100vh - height of all viewport - (navigation (200px) + footer (50pc))*/
+  height: calc(100vh - 250px);
 
+  /* wiil be created scroll when viewport will be fullfilled*/
+  overflow: auto;
+}
 .page {
   margin-top: 200px;
   margin-left: auto;
@@ -69,8 +82,7 @@ nav {
 
 footer {
   background-color: #b0a27d;
-  margin-bottom: 0px;
-  height: 50px;
+  position: sticky;
 }
 
 footer ul {
