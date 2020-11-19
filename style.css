@@ -13,7 +13,7 @@ article {
   height: calc(100vh - 250px);
 
   /* wiil be created scroll when viewport will be fullfilled*/
-  overflow: auto;
+  /* overflow: auto; */
 }
 .page {
   margin-top: 200px;
@@ -68,10 +68,12 @@ nav {
   padding: 5px;
 }
 
+
 .content {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
+  min-height: 800px;
   text-align: justify;
 }
 
@@ -82,14 +84,15 @@ nav {
 
 footer {
   background-color: #b0a27d;
-  position: sticky;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
 }
 
 footer ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 10px;
 }
 
 footer li {
